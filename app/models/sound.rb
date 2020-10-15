@@ -1,3 +1,3 @@
 class Sound < ApplicationRecord
-  belongs_to :playlist
+  has_many :playlist, through: :playlist_sound
 end
